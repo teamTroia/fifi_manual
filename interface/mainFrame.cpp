@@ -38,8 +38,8 @@ void mainFrame::btnIniciarClick(wxCommandEvent &evt){
     if(IP[0] == '/'){
         std::cout << "im a server\n";
         com->setPort(IP);
-        if(true/*com->connect()*/){
-            //com->setEnabled(true);
+        if(com->connect()){
+            com->setEnabled(true);
             if(sock->connect("192.168.0.100") == true){
                 sock->bind_sock(); 
                 isClient = false;
@@ -123,6 +123,10 @@ void parse_message(char* message, std::pair<int, int>* wheels){
 }
 
 void loopTimer::Notify(){
+    for(int i=0; i<3; i++){
+        parent->wheel[i].first = 0;
+        parent->wheel[i].second = 0;
+    }
 	bool all = parent->w or parent->s or parent->d or parent->a;
     if(parent->w and parent->a){
         parent->wheel[parent->idRobot].first = 25;
@@ -162,7 +166,7 @@ void loopTimer::Notify(){
     } else {
         char* message = parent->sock->receive();
         parse_message(message, parent->wheel);
-        //parent->com->sendPackage(parent->wheel);
+        parent->com->sendPackage(parent->wheel);
     }
 }
 

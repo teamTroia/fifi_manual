@@ -60,6 +60,10 @@ Comunication.h
 Socket.h
 ../interface/include/Socket.h
 
+/home/danilo/Documents/fifi_man/Modulos/Socket.cpp
+Socket.h
+/home/danilo/Documents/fifi_man/Modulos/Socket.h
+
 /home/danilo/Documents/fifi_man/interface/mainFrame.cpp
 mainFrame.h
 -
