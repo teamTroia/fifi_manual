@@ -26,7 +26,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../interface/include"
   "/usr/local/lib/wx/include/gtk3-unicode-3.1"
   "/usr/local/include/wx-3.1"
-  "/usr/local/include/opencv4"
   )
 
 # Targets to which this target links.

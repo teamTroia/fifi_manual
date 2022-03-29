@@ -6,5 +6,5 @@ CXX_FLAGS =  -pthread
 
 CXX_DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__
 
-CXX_INCLUDES = -I/home/danilo/Documents/fifi_man -I/home/danilo/Documents/fifi_man/Modulos/include -I/home/danilo/Documents/fifi_man/interface/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.1 -isystem /usr/local/include/wx-3.1 -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/danilo/Documents/fifi_man -I/home/danilo/Documents/fifi_man/Modulos/include -I/home/danilo/Documents/fifi_man/interface/include -isystem /usr/local/lib/wx/include/gtk3-unicode-3.1 -isystem /usr/local/include/wx-3.1 
 

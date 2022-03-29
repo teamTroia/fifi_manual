@@ -139,20 +139,6 @@ fifiSoccerTeam_EXTERNAL_OBJECTS =
 ../fifiSoccerTeam: CMakeFiles/fifiSoccerTeam.dir/interface/mainFrame.cpp.o
 ../fifiSoccerTeam: CMakeFiles/fifiSoccerTeam.dir/fifiman.cpp.o
 ../fifiSoccerTeam: CMakeFiles/fifiSoccerTeam.dir/build.make
-../fifiSoccerTeam: /usr/local/lib/libopencv_highgui.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_ml.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_objdetect.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_photo.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_stitching.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_video.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_videoio.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_imgcodecs.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_calib3d.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_dnn.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_features2d.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_flann.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_imgproc.so.4.5.5
-../fifiSoccerTeam: /usr/local/lib/libopencv_core.so.4.5.5
 ../fifiSoccerTeam: CMakeFiles/fifiSoccerTeam.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danilo/Documents/fifi_man/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../fifiSoccerTeam"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fifiSoccerTeam.dir/link.txt --verbose=$(VERBOSE)

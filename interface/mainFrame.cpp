@@ -40,7 +40,7 @@ void mainFrame::btnIniciarClick(wxCommandEvent &evt){
         com->setPort(IP);
         if(true/*com->connect()*/){
             //com->setEnabled(true);
-            if(sock->connect("127.0.0.1") == true){
+            if(sock->connect("192.168.0.100") == true){
                 sock->bind_sock(); 
                 isClient = false;
                 timer->Start();
