@@ -76,7 +76,7 @@ mainFrame::mainFrame(const wxString& title, const wxPoint& pos) : wxFrame(NULL, 
     d = false;
     panel = new myPanel(this, wxID_ANY, "");
     wxBoxSizer* sizer = new wxBoxSizer(wxVERTICAL);
-    editPort = new wxTextCtrl(this, ID_PORT, "/dev/ttyUSB0", wxDefaultPosition, wxSize(150,30));
+    editPort = new wxTextCtrl(this, ID_PORT, "192.168.0.100", wxDefaultPosition, wxSize(150,30));
     wxArrayString ch = wxArrayString();
     ch.Add("0");
     ch.Add("1");

@@ -1,3 +1,0 @@
-/home/danilo/Documents/fifi_man/build/CMakeFiles/rebuild_cache.dir
-/home/danilo/Documents/fifi_man/build/CMakeFiles/edit_cache.dir
-/home/danilo/Documents/fifi_man/build/CMakeFiles/fifiSoccerTeam.dir
