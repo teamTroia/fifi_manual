@@ -57,6 +57,7 @@ void mainFrame::btnIniciarClick(wxCommandEvent &evt){
             wxMessageBox("Falha ao conectar à porta", "ERRO");
         }
     }
+    panel->SetFocus();
 }
 
 mainFrame::mainFrame(const wxString& title, const wxPoint& pos) : wxFrame(NULL, wxID_ANY, title, pos, wxDefaultSize){
@@ -103,7 +104,7 @@ void parse_message(char* message, std::pair<int, int>* wheels){
     int id;
     int i = 1;
     if(message[0] == '|'){
-        std::cout << message << "\n";
+        //std::cout << message << "\n";
         for(int j=0; j<3;j++){
             std::string aux = "";
             while(message[i] != '|'){
@@ -127,7 +128,6 @@ void loopTimer::Notify(){
         parent->wheel[i].first = 0;
         parent->wheel[i].second = 0;
     }
-	bool all = parent->w or parent->s or parent->d or parent->a;
     if(parent->w and parent->a){
         parent->wheel[parent->idRobot].first = 25;
         parent->wheel[parent->idRobot].second = 50;
@@ -153,8 +153,8 @@ void loopTimer::Notify(){
         parent->wheel[parent->idRobot].first = -25;
         parent->wheel[parent->idRobot].second = 25;
     }
-
-    if(parent->isClient){
+    bool needSend = parent->wheel[parent->idRobot].second || parent->wheel[parent->idRobot].first;
+    if(parent->isClient && needSend){
         std::string pacote = "|";
         pacote += std::to_string(parent->idRobot);
         pacote += "|";
