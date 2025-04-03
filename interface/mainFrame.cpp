@@ -49,7 +49,7 @@ void mainFrame::btnIniciarClick(wxCommandEvent &evt){
             } 
         }
     } else {
-        std::cout << "im a cliet\n";
+        std::cout << "im a client\n";
         if(sock->connect(IP) == true){
             isClient = true;
             timer->Start();
