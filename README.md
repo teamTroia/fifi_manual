@@ -31,3 +31,19 @@ make
 cd ..
 ./fifiSoccerTeam
 ```
+
+### Rodando o projeto
+
+1. Para realizar a comunicação com os robôs, é necessário colocar a porta em que o USB com a comunicação está conectado. Então deve-se descobrir qual o nome da porta que está conectado
+
+```bash
+dmesg | grep tty
+```
+
+2. Após determinar a porta, digite no primeiro campo da interface, por exemplo
+
+```bash
+/dev/ttyUSB0
+```
+
+3. Por fim, coloque o ID correspondente ao robô que deseja controlar e aperte em iniciar, note que no terminal será impresso uma mensagem "im a server". Em seguida, controle o robô com W, A, S e D.
